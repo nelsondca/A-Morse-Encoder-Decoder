@@ -7,11 +7,11 @@ import java.awt.event.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class MorseWindow {
-	private Colour[] colours = Colour.values(); //This might come in handy
-	private ThreadLocalRandom rand = ThreadLocalRandom.current(); //This will definitely come in handy
+	private Colour[] colours = Colour.values(); 
+	private ThreadLocalRandom rand = ThreadLocalRandom.current(); 
 	private JFrame win; //The GUI Window
-	private JTextArea txtOutput = new JTextArea(); //The text box to output the results to
-	private JTextField txtFilePath; //The file name to process
+	private JTextArea txtOutput = new JTextArea(); 
+	private JTextField txtFilePath; 
 	private Morse morse;
 	
 	public MorseWindow(){
@@ -74,9 +74,7 @@ public class MorseWindow {
 		
 		var btnDecodeFile = new JButton("Decode");
 		btnDecodeFile.addActionListener(e -> {
-			/*
-			 * Start your decoding here, but put the logic in another class
-			 */
+			
 			replaceText("Decoding....." + morse.decode(txtOutput.getText()));
 		});
 		
@@ -100,7 +98,7 @@ public class MorseWindow {
         dot.setBackground(getRandomColour());
         dot.setPreferredSize(new Dimension(140, 150));
         dot.addMouseListener(new MouseAdapter() { 
-        	//Can't use a lambda against MouseAdapter because it is not a SAM
+        	
         	public void mousePressed( MouseEvent e ) {  
         		dot.setBackground(getRandomColour());
         	}
