@@ -15,11 +15,7 @@ public class MorseWindow {
 	private Morse morse;
 	
 	public MorseWindow(){
-		/*
-		 * Create a window for the application. Building a GUI is an example of 
-		 * "divide and conquer" in action. A GUI is really a tree. That is why
-		 * we are able to create and configure GUIs in XML.
-		 */
+		
 		win = new JFrame();
 		morse = new Morse();
 		win.setTitle("Data Structures & Algorithms 2023 - Morse Encoder/Decoder");
@@ -104,7 +100,7 @@ public class MorseWindow {
         	}
         });
         
-        //Add the text area
+        //Adding the text area
 		txtOutput.setLineWrap(true);
 		txtOutput.setWrapStyleWord(true);
 		txtOutput.setBorder(new SoftBevelBorder(SoftBevelBorder.LOWERED));
@@ -114,7 +110,7 @@ public class MorseWindow {
 		scroller.setPreferredSize(new Dimension(450, 150));
 		scroller.setMaximumSize(new Dimension(450, 150));
 		
-		//Add all the components to the panel and the panel to the window
+		//Adding all the components to the panel and the panel to the window
 		middle.add(dot);
 		middle.add(scroller);
 		win.getContentPane().add(middle);
@@ -126,7 +122,7 @@ public class MorseWindow {
 		var bottom = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         bottom.setPreferredSize(new java.awt.Dimension(500, 50));
 
-        //Create and add Clear and Quit buttons
+        //Create and adding Clear and Quit buttons
         var clear = new JButton("Clear");
         clear.addActionListener((e) -> txtOutput.setText(""));
         
@@ -140,7 +136,7 @@ public class MorseWindow {
         
         
         /*
-         * All done. Now show the configured Window.
+         Now showing the configured Window.
          */
 		win.setVisible(true);
 	}
