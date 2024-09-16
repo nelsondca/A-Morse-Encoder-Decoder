@@ -6,12 +6,18 @@ Description
 
 This project implements a Morse encoder/decoder application in Java. It allows users to encode text files into Morse code and decode Morse code back into text. The application provides a graphical user interface (GUI) for easy interaction.
 
+
 Features:
 
 -Encode Text Files: Users can select a text file using a file chooser and encode its contents into Morse code.
+
 -Decode Morse Code: Users can input Morse code into the text area and decode it back into readable text.
+
 -Random Color Display: A colored square is displayed in the GUI, which changes color when clicked.
+
 -Clear and Quit: Buttons are provided to clear the text area and quit the application.
+
+
 
 Java Classes:
 
@@ -22,13 +28,13 @@ MorseWindow: This class creates the GUI window for the application. It includes 
 Runner: This class contains the main method to launch the application.
 
 
-To run the application:
+Open application:
 
-Compile all Java files.
+-Compile all Java files.
 
-Run the Runner class.
+-Run the Runner class.
 
-The GUI window will appear, allowing users to interact with the application.
+-The GUI window will appear, allowing users to interact with the application.
 
 To Run
 
