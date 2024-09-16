@@ -8,13 +8,10 @@ This project implements a Morse encoder/decoder application in Java. It allows u
 
 Features:
 
-Encode Text Files: Users can select a text file using a file chooser and encode its contents into Morse code.
-
-Decode Morse Code: Users can input Morse code into the text area and decode it back into readable text.
-
-Random Color Display: A colored square is displayed in the GUI, which changes color when clicked.
-
-Clear and Quit: Buttons are provided to clear the text area and quit the application.
+-Encode Text Files: Users can select a text file using a file chooser and encode its contents into Morse code.
+-Decode Morse Code: Users can input Morse code into the text area and decode it back into readable text.
+-Random Color Display: A colored square is displayed in the GUI, which changes color when clicked.
+-Clear and Quit: Buttons are provided to clear the text area and quit the application.
 
 Java Classes:
 
